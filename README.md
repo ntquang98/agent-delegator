@@ -89,8 +89,6 @@ Restart the host after changing `PATH`.
 
 ## Install from GitHub
 
-The repository must be public at [ntquang98/agent-delegator](https://github.com/ntquang98/agent-delegator). These commands work after the repository and bundled Windows binary have been pushed.
-
 ### Claude Code
 
 Run these commands inside Claude Code:
@@ -282,33 +280,7 @@ codex plugin marketplace add .
 codex plugin add delegate-hub@agent-delegator
 ```
 
-The build script produces `plugins/delegate-hub/bin/delegate-hub.exe`. That binary is intentionally committed because GitHub marketplace installation copies the plugin package and does not build Go source during installation.
-
-## Publish this repository
-
-Before announcing the GitHub installation commands:
-
-1. Build the Windows x64 bridge with `scripts/build.ps1`.
-2. Run the tests and both plugin validators.
-3. Confirm `plugins/delegate-hub/bin/delegate-hub.exe` is included by Git.
-4. Push the complete repository to `https://github.com/ntquang98/agent-delegator`.
-5. Test installation from a clean Claude Code or Codex profile.
-
-```powershell
-git init
-git add .
-git commit -m "Initial Agent Delegator release"
-git branch -M main
-git remote add origin https://github.com/ntquang98/agent-delegator.git
-git push -u origin main
-```
-
-## Credits
-
-The dual-host packaging and delegation workflow were informed by:
-
-- [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)
-- [yuting0624/antigravity-for-claude-code](https://github.com/yuting0624/antigravity-for-claude-code)
+The build script produces `plugins/delegate-hub/bin/delegate-hub.exe`. That binary is committed because GitHub marketplace installation copies the plugin package and does not build Go source during installation.
 
 ## License
 
