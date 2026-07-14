@@ -1,0 +1,22 @@
+{
+  "name": "agent-delegator",
+  "description": "Grok-first and Cursor-powered local coding delegation for Claude Code and Codex.",
+  "owner": {
+    "name": "ntquang98"
+  },
+  "metadata": {
+    "description": "Delegate scoped coding work while the host observes, verifies, and reviews.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "delegate-hub",
+      "source": "./plugins/delegate-hub",
+      "description": "Grok-first local coding delegation with Cursor fallback.",
+      "version": "0.1.0",
+      "author": {
+        "name": "ntquang98"
+      }
+    }
+  ]
+}

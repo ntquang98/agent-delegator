@@ -1,0 +1,26 @@
+{
+  "name": "delegate-hub",
+  "version": "0.1.0",
+  "description": "Delegate scoped coding tasks to Grok Build, with Cursor Agent fallback.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "ntquang98",
+    "url": "https://github.com/ntquang98"
+  },
+  "homepage": "https://github.com/ntquang98/agent-delegator",
+  "repository": "https://github.com/ntquang98/agent-delegator",
+  "license": "MIT",
+  "keywords": ["grok", "cursor", "delegation", "multi-agent"],
+  "interface": {
+    "displayName": "Delegate Hub",
+    "shortDescription": "Grok-first local coding delegation",
+    "longDescription": "Delegates scoped work to Grok Build and falls back to Cursor Agent only before execution begins.",
+    "developerName": "ntquang98",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": [
+      "Delegate this scoped task to Grok first."
+    ]
+  }
+}

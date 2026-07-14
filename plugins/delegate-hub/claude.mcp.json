@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "delegate-hub": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/delegate-hub.exe",
+      "args": ["serve", "--stdio"],
+      "cwd": "${CLAUDE_PLUGIN_ROOT}"
+    }
+  }
+}

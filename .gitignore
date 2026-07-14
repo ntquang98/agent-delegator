@@ -1,0 +1,16 @@
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local build and test output
+coverage.out
+*.test
+dist/
+
+# Local delegation output when DELEGATE_HUB_STATE_DIR points into the repo
+.delegate-hub/
+*.stderr
+
+# plugins/delegate-hub/bin/delegate-hub.exe is intentionally tracked.

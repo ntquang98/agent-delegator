@@ -1,0 +1,20 @@
+{
+  "name": "agent-delegator",
+  "interface": {
+    "displayName": "Agent Delegator"
+  },
+  "plugins": [
+    {
+      "name": "delegate-hub",
+      "source": {
+        "source": "local",
+        "path": "./plugins/delegate-hub"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
